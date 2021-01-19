@@ -5,14 +5,14 @@ if CLIENT then
 	CRUSADER_DATA.local_crusader = {}
 	
 	
-	net.Receive("ttt2_role_priest_new_vow", function()
+	net.Receive("ttt2_role_crusader_new_vow", function()
 		local new_vow = net.ReadEntity()
 		if not new_vow or not new_vow:IsPlayer() then return end
 
 		local new_vow_id = tostring(new_vow:SteamID64() or new_vow:EntIndex())
-		SKIRMISHER_DATA.vowhood[new_vow_id] = true
+		CRUSADER_DATA.vowhood[new_vow_id] = true
 
-		SKIRMISHER_DATA:UpdateScoreboard()
+		CRUSADER_DATA:UpdateScoreboard()
 	end)
 	
 	net.Receive("ttt2_role_crusader_clear_vow", function()
