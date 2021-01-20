@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/ttt/dynamic/roles/has_vow"
+	"$translucent" 1
+}
