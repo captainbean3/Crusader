@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/ttt/dynamic/roles/icon_crus"
+	"$translucent" 1
+}
